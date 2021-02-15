@@ -56,32 +56,32 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
 
 
- /**
- *@swagger
- * /users:
- *  get:
- *      description: Get all Users
- *      responses:
- *          200:
- *            description: success
- */ 
+//  /**
+//  *@swagger
+//  * /users:
+//  *  get:
+//  *      description: Get all Users
+//  *      responses:
+//  *          200:
+//  *            description: success
+//  */ 
 
 app.get('/', (req, res) => {
     res.send("hello world")
 });
 
-  /**
- *@swagger
- * /users:
- *  post:
- *      description: Validate Details
- *      requestBody:
- *       content:
- *        application/json
- *      responses:
- *          201:
- *            description: created
- */ 
+//   /**
+//  *@swagger
+//  * /users:
+//  *  post:
+//  *      description: Validate Details
+//  *      requestBody:
+//  *       content:
+//  *        application/json
+//  *      responses:
+//  *          201:
+//  *            description: created
+//  */ 
 
 
 
