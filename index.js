@@ -4,9 +4,9 @@ const app = express();
 
 const mongoose = require('mongoose');
 
-const swaggerJsDoc = require('swagger-jsdoc');
+// const swaggerJsDoc = require('swagger-jsdoc');
 
-const swaggerUI = require('swagger-ui-express');
+// const swaggerUI = require('swagger-ui-express');
 
 const User  = require("./models/user");
 
@@ -38,21 +38,21 @@ mongoose.connect(
 );
 
 
-const swaggerOptions = {
-    swaggerDefinition:{
-        info: {
-            title: 'Login Api',
-            version: '1.0.0'
-        }
-    },
+// const swaggerOptions = {
+//     swaggerDefinition:{
+//         info: {
+//             title: 'Login Api',
+//             version: '1.0.0'
+//         }
+//     },
 
-    apis: ['index.js']
-};
+//     apis: ['index.js']
+// };
 
 
-const swaggerDocs = swaggerJsDoc(swaggerOptions);
-console.log(swaggerDocs)
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+// const swaggerDocs = swaggerJsDoc(swaggerOptions);
+// console.log(swaggerDocs)
+// app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
 
 
